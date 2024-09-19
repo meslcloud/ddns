@@ -1,5 +1,5 @@
 # Cloudflare DDNS 自动更新脚本
-- 脚本默认是优先获取ipv4地址
+- 脚本默认优先获取ipv4地址，要ipv6可以自己改下
 ## 1.安装 JQ
 Debian/Ubuntu：
 ```shell
