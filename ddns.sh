@@ -17,7 +17,7 @@ RECORD_ID=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/
     -H "Content-Type: application/json" | jq -r '.result[0].id')
 
 # 获取当前的公网IP
-IP=$(curl -s http://ipv4.icanhazip.com)
+IP=$(curl -4 -s https://ipinfo.io/ip)
 
 # 更新DNS记录
 UPDATE_RESULT=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records/$RECORD_ID" \
