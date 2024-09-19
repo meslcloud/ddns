@@ -27,10 +27,7 @@ yum install -y jq
 ```shell
 wget https://raw.githubusercontent.com/meslcloud/ddns/main/ddns.sh
 ```
-编辑：
-```shell
-vim ddns.sh
-```
+编辑ddns.sh：
 ```shell
 #!/bin/bash
 API_TOKEN="您的API令牌"
