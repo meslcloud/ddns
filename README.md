@@ -29,11 +29,11 @@ wget https://raw.githubusercontent.com/meslcloud/ddns/main/ddns.sh
 编辑ddns.sh：
 ```shell
 #!/bin/bash
-API_TOKEN="您的API令牌"
-ZONE_NAME="example.com"           # 您的域名
-RECORD_NAME="sub.example.com"     # 要更新的记录
-TTL=120                           # 可选：TTL 值
-PROXIED=false                     # 可选：是否开启 Cloudflare 代理
+API_TOKEN="API令牌"
+ZONE_NAME="example.com"           # 域名
+RECORD_NAME="sub.example.com"     # 子域名
+TTL=120                           # TTL 值
+PROXIED=false                     # 是否开启 Cloudflare 代理
 ```
 
 ## 4.赋权执行
@@ -46,7 +46,7 @@ chmod +x ddns.sh
 ```
 如果成功，终端会输出：
 ```shell
-[日期 时间] DNS 记录更新成功：sub.example.com -> 您的公网 IP
+[日期 时间] DNS 记录更新成功：sub.example.com -> 公网IP
 ```
 
 ## 5.设置定时任务
