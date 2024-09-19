@@ -23,6 +23,11 @@ yum install -y jq
 - 创建 Token。
 
 ## 3.配置脚本
+下载脚本：
+```shell
+wget https://raw.githubusercontent.com/meslcloud/ddns/main/ddns.sh
+```
+编辑：
 ```shell
 vim ddns.sh
 ```
