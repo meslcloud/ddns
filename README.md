@@ -13,7 +13,7 @@ yum install -y jq
 ```
 
 ## 2.创建 Cloudflare API Token
-> 以下为创建单个域名DNS修改权限的api教程，建议不要使全局api
+> 以下为创建单个域名DNS修改权限的api教程，不要使全局api
 - 登录Cloudflare仪表盘。
 - 进入我的个人资料 -> API令牌。
 - API令牌模板 -> 编辑区域DNS。
